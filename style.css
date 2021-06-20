@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background: white;
+}
+
+body {
+  background: linear-gradient(#ccc 0%, #ddd 30%, #fff 100%);
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  margin: auto;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+p {
+  max-width: 50ch;
+  font-size: 1.15rem;
+}
+
+.intro {
+  margin-top: 5em;
+  text-align: center;
+}
+
+.intro span {
+  text-decoration: underline;
+}
+
+.suggestion {
+  text-align: left;
+}
+
+h1 {
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  font-size: 1.25rem;
+  text-align: left;
+  letter-spacing: 0.2em;
+}
+
+.suggestion__text {
+  letter-spacing: 0.55em;
+  line-height: 3em;
+}
+
+.piano {
+  width: 50%;
+  min-width: 350px;
+  max-width: 550px;
+  min-height: 100px;
+  height: 90%;
+  max-height: 250px;
+  display: flex;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 0 0 0.5em 0.5em;
+  background: linear-gradient(#000 0%, #222 65%, #414141 100%);
+  margin-top: 5em;
+}
+
+kbd {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0.5em 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+[data-key="70"] kbd {
+  text-decoration: underline;
+}
+
+.keyGroup {
+  width: 100%;
+  display: flex;
+}
+
+.whiteKeys {
+  align-content: center;
+  height: 99%;
+}
+
+.key {
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.whiteKey {
+  color: rgb(51, 51, 51);
+  border-radius: 0 0 0.5em 0.5em;
+  box-shadow: 0 1px 5px 1px #111;
+  background: radial-gradient(
+    circle at top right,
+    #ddd 0%,
+    #ddd 5%,
+    #eee 60%,
+    #fff 100%
+  );
+  margin: 0 0.1em 0.1em 0.1em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.blackKey {
+  border-radius: 0.25em 0.25em 0.75em 0.75em;
+  background: radial-gradient(
+    circle at top right,
+    #111 0%,
+    #222 60%,
+    #333 92%,
+    #eee 100%
+  );
+  color: rgb(224, 224, 224);
+  margin: 0 0.1em 0.1em 0.1em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.blackKeys {
+  height: 60%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  position: absolute;
+  justify-content: center;
+}
+
+.pressed {
+  transform-origin: top center;
+  transform: scale(0.99, 0.99);
+  box-shadow: 0px 5px 15px 2px #4ddfe4;
+}
+
+.Cb {
+  grid-column: 3/5;
+}
+
+.Db {
+  grid-column: 6/8;
+}
+
+.Fb {
+  grid-column: 12/14;
+}
+
+.Gb {
+  grid-column: 15/17;
+}
+
+.Ab {
+  grid-column: 18/20;
+}
