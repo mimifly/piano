@@ -57,7 +57,7 @@ h1 {
   width: 50%;
   min-width: 350px;
   max-width: 550px;
-  min-height: 100px;
+  min-height: 200px;
   height: 90%;
   max-height: 250px;
   display: flex;
