@@ -53,7 +53,7 @@ window.addEventListener("load", () => {
 async function registerSW() {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", function () {
-      navigator.serviceWorker.register("./sw.js").then(
+      navigator.serviceWorker.register("https://mimifly.github.io/piano/sw.js").then(
         function (registration) {
           // Registration was successful
           console.log(
