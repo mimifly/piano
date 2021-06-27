@@ -47,26 +47,16 @@ keys.forEach((key) =>
 );
 
 window.addEventListener("load", () => {
-  console.log("hello");
   registerSW();
 });
 
 async function registerSW() {
   if ("serviceWorker" in navigator) {
-    window.addEventListener("load", function () {
-      navigator.serviceWorker.register("https://mimifly.github.io/piano/sw.js").then(
-        function (registration) {
-          // Registration was successful
-          console.log(
-            "ServiceWorker registration successful with scope: ",
-            registration.scope
-          );
-        },
-        function (err) {
-          // registration failed :(
-          console.log("ServiceWorker registration failed: ", err);
-        }
-      );
-    });
+    try {
+      await navigator.serviceWorker.register("./sw.js");
+    } catch (err) {
+      // registration failed :(
+      console.log("ServiceWorker registration failed");
+    }
   }
 }
