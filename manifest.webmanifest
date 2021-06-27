@@ -1,0 +1,20 @@
+{
+  "name": "Simple Piano",
+  "short_name": "Piano",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A simple piano app for beginners.",
+  "icons": [
+    {
+      "src": "image/piano512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "image/piano192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
