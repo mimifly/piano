@@ -1,7 +1,7 @@
 {
   "name": "Simple Piano",
   "short_name": "Piano",
-  "start_url": ".",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#fff",
   "description": "A simple piano app for beginners.",
