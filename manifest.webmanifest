@@ -1,8 +1,9 @@
 {
   "name": "Simple Piano",
   "short_name": "Piano",
-  "start_url": "/",
+  "start_url": "https://mimifly.github.io/piano/",
   "display": "standalone",
+  "scope": "https://mimifly.github.io/piano/",
   "background_color": "#fff",
   "description": "A simple piano app for beginners.",
   "icons": [
