@@ -47,6 +47,7 @@ keys.forEach((key) =>
 );
 
 window.addEventListener("load", () => {
+  console.log("hello");
   registerSW();
 });
 
